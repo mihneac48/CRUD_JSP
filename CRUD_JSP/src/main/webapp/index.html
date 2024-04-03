@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<style>
+.fundal
+{
+	background-size: 100% 200%;
+	background-image: linear-gradient(to right top, #95adcb, #78b5ca, #6cbcb7, #80bd99, #a7b97b);
+}
+.container-name {
+  margin-left: 30px;
+  margin-top: 60px;
+}
+
+.buton2 {
+  font-family: 'Poppins';
+  color: #fff !important;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  background: #60a3bc;
+  padding: 20px;
+  border-radius: 50px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+}
+
+.buton2:hover {
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.4s ease 0s;
+}
+.buton1 {
+  border-radius: 4px;
+  background: linear-gradient(to right, #67b26b, #4ca2cb) !important;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 22px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.4s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.buton1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+}
+
+.buton1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buton1:hover span {
+  padding-right: 25px;
+}
+
+.buton1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.titlu
+{
+	font-family: 'Calligraffitti', cursive;
+	letter-spacing: 3px;
+	font-size: 40px;
+	color: #F9f1cc;
+	text-shadow: 5px 5px 0px #FFB650, 
+    10px 10px 0px #FFD662, 
+    15px 15px 0px  #FF80BF, 
+    20px 20px 0px #EF5097, 
+   
+}
+</style>
+<head>
+<title>index</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="fundal">	
+
+<hr color="black" size="5">
+<hr color="black" size="5">
+<br/>
+<h2 class="titlu">Vizualizari,Adaugari,Stergeri</h2>
+<p> <div class="container-name"><a  class="buton1" href="tabela_Artisti.jsp"><span><b><strong>Artisti</strong></b></span></a></div></p>
+<p> <div class="container-name"><a class="buton1" href="tabela_Concerte.jsp"><span><b><strong>Concerte</strong></b></span></a></div></p>
+<p> <div class="container-name"><a class="buton1" href="tabela_Repartizari.jsp"><span><b><strong>Repartizari</strong></b></span></a></div></p>
+<br/>
+<hr color="black" size="5">
+<ul>
+<div class="container-name"><a class="buton2" href="modifica_Artist.jsp"><b><strong>Modifica Artisti</strong></b></a>
+</ul>
+<ul>
+<div class="container-name"><a class="buton2" href="modifica_Concert.jsp"><b><strong>Modifica Concerte</strong></b></a>
+</ul>
+<ul>
+<div class="container-name"><a class="buton2" href="modifica_Repartizare.jsp"><b><strong>Modifica Repartizari</strong></b></a></li>
+</ul>
+<hr color="black" size="5">
+<hr color="black" size="5">
+<br/>
+</body>
+</html>
